@@ -1,1 +1,0 @@
-# Utility function for Sieve of Sundaram

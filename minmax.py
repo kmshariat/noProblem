@@ -1,11 +1,24 @@
-#this function can return the largest value of a given tuple
-def largest(*list):
-    list = sorted(list)
-    return list[-1]
-#largest(0,9,28,6,-1,2) will return a value of 28
 
-#this function can return the smallest value of a given tuple
+def largest(*list):
+    """ This function can return the max value of a given tuple
+    Args:
+        list (tuple)
+    Returns:
+        _type_: Max of Tuple
+    """  
+    return max(list)
+
+
 def smallest(*list):
-    list = sorted(list)
-    return list[0]
-  #largest(0,9,28,6,-1,2) will return a value of -1
+    """ This function can return the min value of a given tuple
+    Args:
+        list (tuple)
+    Returns:
+        _type_: Max of Tuple
+    """    
+    return min(list)
+
+
+if __name__ == '__main__':
+    print(largest(0,9,28,6,-1,2))
+    print(smallest(0,9,28,6,-1,2))
